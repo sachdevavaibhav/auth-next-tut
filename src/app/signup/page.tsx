@@ -24,9 +24,9 @@ export default function SignUpPage() {
             className='border border-gray-300 p-2 mb-4 rounded-lg'
                 id='username'
                 type='text'
-                placeholder='Username'
+                placeholder='username'
                 value={user.username}
-                onChange={(e) => setUser({...user, username: 
+                onChange={(e) => setUser({...user, username:
                     e.target.value})}
             />
             <label htmlFor='email'>Email</label>
@@ -36,7 +36,7 @@ export default function SignUpPage() {
                 type='text'
                 placeholder='Email'
                 value={user.email}
-                onChange={(e) => setUser({...user, email: 
+                onChange={(e) => setUser({...user, email:
                     e.target.value})}
             />
             <label htmlFor='password'>Password</label>
@@ -46,13 +46,14 @@ export default function SignUpPage() {
                 type='password'
                 placeholder='Password'
                 value={user.password}
-                onChange={(e) => setUser({...user, password: 
+                onChange={(e) => setUser({...user, password:
                     e.target.value})}
             />
             <button
             onClick={onSignup}
             className='bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded'
-            >Sign Up</button> 
+            >Sign Up
+            </button>
             <p>Already have an account? <Link href='/login'>Visit Login</Link></p>
         </div>
     )
